@@ -1,4 +1,5 @@
 <?php 
+// coded by https://www.athoul.site
 error_reporting(0);
 class penjualan
 {
@@ -18,6 +19,7 @@ class penjualan
         </script>
         <?php
 	}
+	// coded by https://www.athoul.site
 	function redirect($url){
 		?>
 		<script type="text/javascript">
@@ -44,7 +46,7 @@ class penjualan
 		}else{
 		$password=sha1($password);
 		$query=$this->con->query("select * from user where username='$username' and password='$password' and status='$loginas'");
-		
+		// coded by https://www.athoul.site
 		if ($query->num_rows > 0) {
 			echo "<div class='green'><i class='fa fa-check'></i> Login Berhasil, silahkan tunggu beberapa saat.</div>";
 			$data=$query->fetch_assoc();
@@ -102,6 +104,7 @@ class penjualan
 			}
 		}
 	}
+	// coded by https://www.athoul.site
 	function tambah_kategori($nama_kategori){
 		$query=$this->con->query("select * from kategori where nama_kategori='$nama_kategori'");
 		if ($query->num_rows > 0) {
@@ -177,6 +180,7 @@ class penjualan
 			echo "<td></td><td colspan='5'>Barang dengan kategori tersebut masih kosong</td>";
 		}
 	}
+	// coded by https://www.athoul.site
 	function tampil_kategori(){
 		$query=$this->con->query("select * from kategori order by id_kategori desc");
 		$no=1;
@@ -441,5 +445,6 @@ class penjualan
 		}
 	}
 }
+// coded by https://www.athoul.site
 $root=new penjualan();
 ?>

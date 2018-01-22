@@ -2,4 +2,4 @@
 Aplikasi penjualan dengan php gratis.
 silahkan di download aplikasi penjualan dengan php dan mysql secara gratis.
 
-jangan lupa bookmark https://www.athoul.site
+Coded by https://www.athoul.site
